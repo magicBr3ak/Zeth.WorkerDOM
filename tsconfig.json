@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": true,
+    "sourceMap": false,
+    "target": "es3",
+    "rootDir": "./Content/Ts/",
+    "outDir": "./Content/Js/"
+  },
+  "compileOnSave": true
+}

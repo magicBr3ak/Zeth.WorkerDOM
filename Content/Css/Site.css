@@ -1,0 +1,118 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #676a6c;
+    line-height: 1.5;
+    margin: 0px;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.frm-row {
+    margin-bottom: 15px;
+}
+.frm-control {
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid #e5e6e7;
+    border-radius: 1px;
+    color: inherit;
+    display: block;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    margin: 0px;
+}
+.frm-control:focus {
+    border-color: #1ab394;
+    outline: 0;
+}
+.frm-control[disabled] {
+    cursor: not-allowed;
+    background-color: #EEE;
+}
+.frm-label {
+    color: #000;
+    font-size: 1rem;
+}
+.btn {
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 3px;
+    background-color: #4267b2;
+    color: #fff;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn:focus {
+    color: #fff;
+    border-color: #334f87;
+    background-color: #334f87;
+    outline: 0;
+}
+.btn-sm {
+    padding: 2px 6px;
+    font-size: 0.9REM;
+}
+.nav {
+    height: 100px;
+    width: 100%;
+    background-color: #4267b2;
+}
+.nav-icon {
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.img {
+    height: 64px;
+    width: 64px;
+}
+.ico {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+.clickable {
+    cursor: pointer;
+}
+.tbl {
+    width: 100%;
+    border-collapse: collapse;
+}
+.tbl > thead > tr > th {
+    text-align: center;
+    border-bottom: 1px solid #DDDDDD;
+    line-height: 1.42857;
+    padding: 8px;
+    vertical-align: top;
+}
+.tbl > tbody > tr > td {
+    text-align: center;
+    border-bottom: 1px solid #DDDDDD;
+    line-height: 1.42857;
+    padding: 8px;
+    vertical-align: top;
+}
+.state-error > .frm-control {
+    border-color: #f00;
+}

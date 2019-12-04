@@ -1,0 +1,168 @@
+﻿/*#region Core*/
+[w-template] {
+    display: none;
+}
+/*#endregion Core*/
+
+/*#region Datepicker*/
+.datepicker {
+    position: absolute;
+    background: white;
+    width: 218px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 0px 8px 8px 8px;
+    background-color: #4267b2;
+    color: white;
+    line-height: 1.4EM;
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.datepicker .normal {
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.datepicker table {
+    border-spacing: 0px;
+    text-align: center;
+}
+
+.datepicker tbody {
+    background-color: white;
+    color: black;
+}
+.datepicker .other {
+    color: gray;
+}
+.datepicker .selected {
+    border: 1px solid #4267b2;
+}
+/*#endregion Datepicker*/
+
+/*#region Autocomplete*/
+.auto-complete {
+    position: absolute;
+    background: white;
+    max-width: 200px;
+    overflow-x: auto;
+    border: 1px solid black;
+    border-radius: 0px 8px 8px 8px;
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+.auto-complete div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 3px 10px;
+}
+.auto-complete .bold {
+    font-weight: bold;
+}
+
+.auto-complete .selected {
+    background-color: #4267b2;
+    color: white;
+}
+/*#endregion Autocomplete*/
+
+/*#region Modal*/
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow-y: auto;
+    z-index: 2000;
+    background-color: rgba(0,0,0,.3);
+    animation-name: fadeInOpacity;
+    animation-duration: .3s;
+}
+.modal .content {
+    position: relative;
+    margin: 0px auto 30px auto;
+    width: 600px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    animation-name: fadeInMargin;
+    animation-duration: .2s;
+    animation-delay: .1s;
+    animation-fill-mode: forwards;
+    background-color: #4267b2;
+}
+.modal .sm {
+    width: 400px;
+}
+.modal .content .body {
+    background-color: white;
+    color: black;
+    min-height: 32px;
+    padding: 10px;
+}
+.modal .content .title {
+    min-height: 32px;
+    color: white;
+    border-bottom: 1px solid #a0a0a0;
+    font-size: 1.1rem;
+    padding: 8px;
+}
+.modal .content .footer {
+    min-height: 32px;
+    border-top: 1px solid #a0a0a0;
+    padding: 5px;
+    background-color: white;
+    text-align: right;
+    border-radius: 0px 0px 5px 5px;
+}
+
+@keyframes fadeInMargin {
+    0% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: 30px;
+    }
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/*#endregion Modal*/
+
+/*#region Wait*/
+.view-wait * {
+    display: none;
+}
+
+.view-wait:after {
+    display: block !important;
+    content: '';
+    width: 40px;
+    height: 40px;
+    margin: 5px auto;
+    background-color: #4267b2;
+    border-radius: 100%;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+@keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}
+/*#endregion Wait*/
